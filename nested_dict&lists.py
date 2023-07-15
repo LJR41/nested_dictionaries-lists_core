@@ -1,52 +1,52 @@
-x = [ [5,2,3], [10,8,9] ] 
+# x = [ [5,2,3], [10,8,9] ] 
 
-x[1][0] = 15
+# x[1][0] = 15
 
-students = [
-    {'first_name':  'Michael', 'last_name' : 'Jordan'},
-    {'first_name' : 'John', 'last_name' : 'Rosales'}
-]
+# students = [
+#     {'first_name':  'Michael', 'last_name' : 'Jordan'},
+#     {'first_name' : 'John', 'last_name' : 'Rosales'}
+# ]
 
-students[0]["last_name"] = "Bryant"
-
-
-sports_directory = {
-    'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
-    'soccer' : ['Messi', 'Ronaldo', 'Rooney']
-}
-
-sports_directory['soccer'][0] = "Andres"
-
-z = [ {'x': 10, 'y': 20} ]
-
-z[0]['y'] = 30
+# students[0]["last_name"] = "Bryant"
 
 
-students = [
-        {'first_name':  'Michael', 'last_name' : 'Jordan'},
-        {'first_name' : 'John', 'last_name' : 'Rosales'},
-        {'first_name' : 'Mark', 'last_name' : 'Guillen'},
-        {'first_name' : 'KB', 'last_name' : 'Tonel'}
-    ]
+# sports_directory = {
+#     'basketball' : ['Kobe', 'Jordan', 'James', 'Curry'],
+#     'soccer' : ['Messi', 'Ronaldo', 'Rooney']
+# }
 
-def iterateDictionary(some_lists):
-    for i in range(0,len(some_lists)):
-        print(some_lists[i])
+# sports_directory['soccer'][0] = "Andres"
 
-iterateDictionary(students)
+# z = [ {'x': 10, 'y': 20} ]
 
-def iterateDictionary2(key_name, some_list):
-    for i in range(0,len(some_list)):
-        print(some_list[i][key_name])
+# z[0]['y'] = 30
 
 
-iterateDictionary2('first_name', students)
+# students = [
+#         {'first_name':  'Michael', 'last_name' : 'Jordan'},
+#         {'first_name' : 'John', 'last_name' : 'Rosales'},
+#         {'first_name' : 'Mark', 'last_name' : 'Guillen'},
+#         {'first_name' : 'KB', 'last_name' : 'Tonel'}
+#     ]
 
-def iterateDictionary2(key_name, some_list):
-    for i in range(0,len(some_list)):
-        print(some_list[i][key_name])
+# def iterateDictionary(some_lists):
+#     for i in range(0,len(some_lists)):
+#         print(some_lists[i])
 
-iterateDictionary2('last_name', students)
+# iterateDictionary(students)
+
+# def iterateDictionary2(key_name, some_list):
+#     for i in range(0,len(some_list)):
+#         print(some_list[i][key_name])
+
+
+# iterateDictionary2('first_name', students)
+
+# def iterateDictionary2(key_name, some_list):
+#     for i in range(0,len(some_list)):
+#         print(some_list[i][key_name])
+
+# iterateDictionary2('last_name', students)
 
 
 
@@ -55,8 +55,11 @@ dojo = {
     'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
 }
 def printInfo(some_dict):
-    for i in range(0,len(some_dict)):
-        print(len(some_dict['locations']), some_dict['locations'])
-        print(len(some_dict['instructors']), (some_dict['instructors']))
+        print(f"{len(some_dict['locations'])} LOCATIONS")
+        for i in range(0,len(some_dict['locations'])):
+            print(some_dict['locations'][i])
+        print(f"{len(some_dict['instructors'])} INSTRUCTORS")
+        for i in range(0,len(some_dict['instructors'])):
+            print(some_dict['instructors'][i])
 
 printInfo(dojo)
